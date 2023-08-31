@@ -51,9 +51,39 @@
           </button>
         </div>
 
-        <!-- Hamburger Menu -->
+        <!-- Hamburger Button -->
+        <button
+          id="menu-btn"
+          class="block hamburger lg:hidden focus:outline-none"
+          type="button"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
       </div>
       <!-- Mobile Menu -->
+      <div
+        id="menu"
+        class="absolute md:hidden hidden bg-darkViolet p-6 rounded-lg left-6 right-6 top-20 z-100"
+      >
+        <div
+          class="flex flex-col items-center justify-center w-full space-y-6 text-white font-bold rounded-sm"
+        >
+          <a href="" class="w-full text-center">Features</a>
+          <a href="" class="w-full text-center">Pricing</a>
+          <a href="" class="w-full text-center">Resources</a>
+          <a href="" class="w-full pt-6 border-t border-gray-400 text-center"
+            >Login</a
+          >
+          <button
+            id="menu-btn"
+            class="w-full px-8 py-3 font-bold text-white bg-cyan rounded-full hover:opacity-70"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
@@ -263,6 +293,87 @@
       </div>
     </section>
 
-    <footer class="py-16 bg-veryDarkViolet"></footer>
+    <footer class="py-16 bg-veryDarkViolet">
+      <div
+        class="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start"
+      >
+        <img src="./images/logo.svg" alt="" />
+        <!-- Menus Container -->
+        <div
+          class="flex flex-col space-y-16 md:space-y-0 md:flex-row md:space-x-20"
+        >
+          <div class="flex- flex-col space-y-5 text-center md:text-left">
+            <h5 class="text-white font-bold">Features</h5>
+            <div class="group">
+              <a href="" class="text-grayishViolet group-hover:text-cyan"
+                >Link Shortening</a
+              >
+            </div>
+            <div class="group">
+              <a href="" class="text-grayishViolet group-hover:text-cyan"
+                >Branded Links</a
+              >
+            </div>
+            <div class="group">
+              <a href="" class="text-grayishViolet group-hover:text-cyan"
+                >Analytics</a
+              >
+            </div>
+          </div>
+          <div
+            class="flex- flex-col items-center md:text-left space-y-5 text-center"
+          >
+            <h5 class="text-white font-bold">Resources</h5>
+            <div class="group">
+              <a href="" class="text-grayishViolet group-hover:text-cyan"
+                >Blog</a
+              >
+            </div>
+            <div class="group">
+              <a href="" class="text-grayishViolet group-hover:text-cyan"
+                >Developers</a
+              >
+            </div>
+            <div class="group">
+              <a href="" class="text-grayishViolet group-hover:text-cyan"
+                >Support</a
+              >
+            </div>
+          </div>
+          <div
+            class="flex- flex-col items-center md:text-left space-y-5 text-center"
+          >
+            <h5 class="text-white font-bold">Company</h5>
+            <div class="group">
+              <a href="" class="text-grayishViolet group-hover:text-cyan"
+                >About</a
+              >
+            </div>
+            <div class="group">
+              <a href="" class="text-grayishViolet group-hover:text-cyan"
+                >Our Team</a
+              >
+            </div>
+            <div class="group">
+              <a href="" class="text-grayishViolet group-hover:text-cyan"
+                >Careers</a
+              >
+            </div>
+            <div class="group">
+              <a href="" class="text-grayishViolet group-hover:text-cyan"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-row space-x-5 items-center">
+          <img src="./images/icon-facebook.svg" alt="" />
+          <img src="./images/icon-twitter.svg" alt="" />
+          <img src="./images/icon-pinterest.svg" alt="" />
+          <img src="./images/icon-instagram.svg" alt="" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

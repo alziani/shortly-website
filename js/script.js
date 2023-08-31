@@ -1,8 +1,18 @@
 const input = document.getElementById("link-input");
 const errMsg = document.getElementById("err-msg");
 const form = document.getElementById("link-form");
+const menu = document.getElementById("menu");
+const btn = document.getElementById("menu-btn");
+
+btn.addEventListener("click", menuHandler);
 
 form.addEventListener("submit", formSubmit);
+
+function menuHandler() {
+  btn.classList.toggle("open");
+  menu.classList.toggle("flex");
+  menu.classList.toggle("hidden");
+}
 
 // Validate a URL
 function validURL(str) {
